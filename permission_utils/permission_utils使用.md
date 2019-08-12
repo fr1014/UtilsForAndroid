@@ -1,3 +1,4 @@
+ ### 1.在Activity或者Fragment中使用
  ```
  //Api大于26需要请求权限
  if (PermissionUtils.needRequestPermission()){
@@ -27,3 +28,12 @@
  }       
  ```       
         
+ ### 2.添加回调
+ 
+ ```
+//必须添加，否则第一次请求成功权限不会走回调
+@Override
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+       Permission.onRequestPermissionResult(requestCode, permissions, grantResults);
+}
+```    
