@@ -14,7 +14,8 @@
 
                         @Override
                         public void onCancel(int requestCode, String... permission) {
-                            //用户拒绝给予授权，提醒是否需要进入系统设置给予授权
+                            //用户拒绝给予授权，提醒是否需要进入权限设置界面
+                            //确定后跳转至当前app的权限设置界面
                             PermissionUtils.goSetting(mContext);
                         }
                     })
