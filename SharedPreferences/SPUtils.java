@@ -1,5 +1,3 @@
-package com.fr.konwledge.utils;
-
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
